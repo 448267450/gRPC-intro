@@ -3,10 +3,17 @@ syntax = "proto3"
 package todoPackage;
 
 service Todo{
-    rpc createTod() returns ( TodoItem )
+    rpc createTod( TodoItem ) returns ( TodoItem )
+    rpc readTodos() returns ( TodoItems )
 }
+
+message void{}
 
 message TodoItem {
     int32 id = 1;
     string text = 2;
+}
+
+message TodoItems{
+    repeated TodoItem items = 1;
 }

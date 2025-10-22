@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.8.0",
+    "grpc": "^1.24.11"
+  }
 }
